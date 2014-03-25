@@ -1,0 +1,84 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "9c4e4155_d11a4455",
+        "filename": "build.sh",
+        "patchSetId": 2
+      },
+      "lineNbr": 4,
+      "author": {
+        "id": 1011123
+      },
+      "writtenOn": "2014-03-25T22:45:07Z",
+      "side": 1,
+      "message": "are any of these folders likely to already exist?\n\nif so, it would be better to do `mkdir -p`",
+      "revId": "f9e4e74e566503bff50b66113cfc32558ef86efb",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "9c4e4155_1125ac8f",
+        "filename": "build.sh",
+        "patchSetId": 2
+      },
+      "lineNbr": 6,
+      "author": {
+        "id": 1011123
+      },
+      "writtenOn": "2014-03-25T22:45:07Z",
+      "side": 1,
+      "message": "why just gerrit rather than gerrit-review?",
+      "range": {
+        "startLine": 6,
+        "startChar": 18,
+        "endLine": 6,
+        "endChar": 24
+      },
+      "revId": "f9e4e74e566503bff50b66113cfc32558ef86efb",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "fc71fd8c_542f0c6f",
+        "filename": "build.sh",
+        "patchSetId": 2
+      },
+      "lineNbr": 20,
+      "author": {
+        "id": 1011123
+      },
+      "writtenOn": "2014-03-25T22:45:07Z",
+      "side": 1,
+      "message": "shouldn\u0027t this be `buck build all` ?",
+      "revId": "f9e4e74e566503bff50b66113cfc32558ef86efb",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "9c4e4155_f11f4842",
+        "filename": "build.sh",
+        "patchSetId": 2
+      },
+      "lineNbr": 26,
+      "author": {
+        "id": 1011123
+      },
+      "writtenOn": "2014-03-25T22:45:07Z",
+      "side": 1,
+      "message": "is this bit necessary?",
+      "range": {
+        "startLine": 26,
+        "startChar": 34,
+        "endLine": 26,
+        "endChar": 50
+      },
+      "revId": "f9e4e74e566503bff50b66113cfc32558ef86efb",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": false
+    }
+  ]
+}
