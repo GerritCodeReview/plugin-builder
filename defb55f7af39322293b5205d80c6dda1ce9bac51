@@ -1,0 +1,38 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "fc71fd8c_1425948f",
+        "filename": "setup.sh",
+        "patchSetId": 3
+      },
+      "lineNbr": 1,
+      "author": {
+        "id": 1011123
+      },
+      "writtenOn": "2014-03-25T22:41:14Z",
+      "side": 1,
+      "message": "Would it be worth putting `-ex` here to get the echoed output and exit status?",
+      "revId": "defb55f7af39322293b5205d80c6dda1ce9bac51",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "fc71fd8c_34229088",
+        "filename": "setup.sh",
+        "patchSetId": 3
+      },
+      "lineNbr": 4,
+      "author": {
+        "id": 1011123
+      },
+      "writtenOn": "2014-03-25T22:41:14Z",
+      "side": 1,
+      "message": "nit: extra blank line here.",
+      "revId": "defb55f7af39322293b5205d80c6dda1ce9bac51",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": false
+    }
+  ]
+}
