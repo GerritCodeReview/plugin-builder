@@ -1,0 +1,44 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "9c4e4155_d15de42d",
+        "filename": "setup.sh",
+        "patchSetId": 2
+      },
+      "lineNbr": 3,
+      "author": {
+        "id": 1006257
+      },
+      "writtenOn": "2014-03-25T21:33:30Z",
+      "side": 1,
+      "message": "Personal preference, it\u0027s pretty obvious what you are doing here...not comment is needed, just do it all on one line\n\n# Install needed packages\napt-get install git-core openjdk-7-jdk ant maven",
+      "range": {
+        "startLine": 3,
+        "startChar": 2,
+        "endLine": 3,
+        "endChar": 9
+      },
+      "revId": "2299dd76b72d699da2cdb5cfe1c3438fd7a29bfc",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "9c4e4155_b16860cd",
+        "filename": "setup.sh",
+        "patchSetId": 2
+      },
+      "lineNbr": 14,
+      "author": {
+        "id": 1006257
+      },
+      "writtenOn": "2014-03-25T21:33:30Z",
+      "side": 1,
+      "message": "Here on should be a part of the build script.  You don\u0027t need root for any of this.",
+      "revId": "2299dd76b72d699da2cdb5cfe1c3438fd7a29bfc",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": false
+    }
+  ]
+}
