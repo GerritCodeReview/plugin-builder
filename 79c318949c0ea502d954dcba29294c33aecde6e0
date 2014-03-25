@@ -1,0 +1,55 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "fc71fd8c_54f8ec94",
+        "filename": "build.sh",
+        "patchSetId": 3
+      },
+      "lineNbr": 4,
+      "author": {
+        "id": 1006257
+      },
+      "writtenOn": "2014-03-25T23:15:49Z",
+      "side": 1,
+      "message": "assume this workspace is already dirty and blow it away",
+      "revId": "79c318949c0ea502d954dcba29294c33aecde6e0",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "fc71fd8c_34fb7094",
+        "filename": "build.sh",
+        "patchSetId": 3
+      },
+      "lineNbr": 16,
+      "author": {
+        "id": 1006257
+      },
+      "writtenOn": "2014-03-25T23:15:49Z",
+      "side": 1,
+      "message": "Are there any significant size constraints here? (More than 5GB is significant)",
+      "revId": "79c318949c0ea502d954dcba29294c33aecde6e0",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "9c4e4155_51f81495",
+        "filename": "build.sh",
+        "patchSetId": 3
+      },
+      "lineNbr": 26,
+      "author": {
+        "id": 1006257
+      },
+      "writtenOn": "2014-03-25T23:15:49Z",
+      "side": 1,
+      "message": "I\u0027m imagining you want to do several of these...it\u0027d be nice if you just had them in array which you looped through and did the build and upload for each.",
+      "revId": "79c318949c0ea502d954dcba29294c33aecde6e0",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": false
+    }
+  ]
+}
