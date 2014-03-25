@@ -19,6 +19,24 @@
     },
     {
       "key": {
+        "uuid": "fc71fd8c_94e284f3",
+        "filename": "build.sh",
+        "patchSetId": 2
+      },
+      "lineNbr": 4,
+      "author": {
+        "id": 1011323
+      },
+      "writtenOn": "2014-03-25T22:58:30Z",
+      "side": 1,
+      "message": "OK",
+      "parentUuid": "9c4e4155_d11a4455",
+      "revId": "f9e4e74e566503bff50b66113cfc32558ef86efb",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "9c4e4155_1125ac8f",
         "filename": "build.sh",
         "patchSetId": 2
@@ -30,6 +48,30 @@
       "writtenOn": "2014-03-25T22:45:07Z",
       "side": 1,
       "message": "why just gerrit rather than gerrit-review?",
+      "range": {
+        "startLine": 6,
+        "startChar": 18,
+        "endLine": 6,
+        "endChar": 24
+      },
+      "revId": "f9e4e74e566503bff50b66113cfc32558ef86efb",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "fc71fd8c_54462c3f",
+        "filename": "build.sh",
+        "patchSetId": 2
+      },
+      "lineNbr": 6,
+      "author": {
+        "id": 1011323
+      },
+      "writtenOn": "2014-03-25T22:58:30Z",
+      "side": 1,
+      "message": "Just copied it from the dev-bucks.txt.",
+      "parentUuid": "9c4e4155_1125ac8f",
       "range": {
         "startLine": 6,
         "startChar": 18,
@@ -59,6 +101,24 @@
     },
     {
       "key": {
+        "uuid": "fc71fd8c_7443282e",
+        "filename": "build.sh",
+        "patchSetId": 2
+      },
+      "lineNbr": 20,
+      "author": {
+        "id": 1011323
+      },
+      "writtenOn": "2014-03-25T22:58:30Z",
+      "side": 1,
+      "message": "sure",
+      "parentUuid": "fc71fd8c_542f0c6f",
+      "revId": "f9e4e74e566503bff50b66113cfc32558ef86efb",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "9c4e4155_f11f4842",
         "filename": "build.sh",
         "patchSetId": 2
@@ -70,6 +130,30 @@
       "writtenOn": "2014-03-25T22:45:07Z",
       "side": 1,
       "message": "is this bit necessary?",
+      "range": {
+        "startLine": 26,
+        "startChar": 34,
+        "endLine": 26,
+        "endChar": 50
+      },
+      "revId": "f9e4e74e566503bff50b66113cfc32558ef86efb",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "9c4e4155_114ccc5f",
+        "filename": "build.sh",
+        "patchSetId": 2
+      },
+      "lineNbr": 26,
+      "author": {
+        "id": 1011323
+      },
+      "writtenOn": "2014-03-25T22:58:30Z",
+      "side": 1,
+      "message": "proably not",
+      "parentUuid": "9c4e4155_f11f4842",
       "range": {
         "startLine": 26,
         "startChar": 34,
