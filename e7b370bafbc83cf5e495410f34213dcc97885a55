@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "9c4e4155_518574f0",
+        "filename": "build.sh",
+        "patchSetId": 4
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1011123
+      },
+      "writtenOn": "2014-03-25T23:56:04Z",
+      "side": 1,
+      "message": "Does this file need a license and copyright header?",
+      "revId": "e7b370bafbc83cf5e495410f34213dcc97885a55",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": false
+    }
+  ]
+}
