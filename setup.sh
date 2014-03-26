@@ -39,7 +39,7 @@ fi
 # Install the needed packages and setup the environment
 apt-get install -y gcc openjdk-7-jdk ant maven zip
 rm -rf $path
-echo "0 0 * * * /usr/pb/setup.sh build >> /var/log/pb.log" | crontab -u root
+echo "0 0 * * * /usr/pb/setup.sh build >> /var/log/pb.log" | crontab -
 adduser --uid 1337 --disabled-password --gecos ,,, worker
 
 
