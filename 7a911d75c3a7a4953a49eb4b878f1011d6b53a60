@@ -1,0 +1,61 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "fc71fd8c_345e10af",
+        "filename": "setup.sh",
+        "patchSetId": 3
+      },
+      "lineNbr": 24,
+      "author": {
+        "id": 1011123
+      },
+      "writtenOn": "2014-03-26T01:15:40Z",
+      "side": 1,
+      "message": "changed since when?",
+      "range": {
+        "startLine": 24,
+        "startChar": 20,
+        "endLine": 24,
+        "endChar": 31
+      },
+      "revId": "7a911d75c3a7a4953a49eb4b878f1011d6b53a60",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "9c4e4155_11e4ccc2",
+        "filename": "setup.sh",
+        "patchSetId": 3
+      },
+      "lineNbr": 26,
+      "author": {
+        "id": 1011123
+      },
+      "writtenOn": "2014-03-26T01:15:40Z",
+      "side": 1,
+      "message": "what does \"pb\" mean?  previous build?",
+      "revId": "7a911d75c3a7a4953a49eb4b878f1011d6b53a60",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "9c4e4155_31e1d0b3",
+        "filename": "setup.sh",
+        "patchSetId": 3
+      },
+      "lineNbr": 42,
+      "author": {
+        "id": 1011123
+      },
+      "writtenOn": "2014-03-26T01:15:40Z",
+      "side": 1,
+      "message": "maybe add comments about what these lines are doing?",
+      "revId": "7a911d75c3a7a4953a49eb4b878f1011d6b53a60",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": false
+    }
+  ]
+}
