@@ -31,19 +31,12 @@ path=/usr/pb
 cp $0 $oldsetup
 rm -rf $path
 git clone https://gerrit-review.googlesource.com/plugin-builder $path
-if [ "$(sha1 $path/setup.sh)" != "$(sha1 $oldsetup)" ]
-then
-    rm $oldsetup
-    $path/setup.sh $1
-    exit 0
-fi
 
 
 # Install the needed packages and setup the environment
 apt-get install -y gcc openjdk-7-jdk ant maven zip
-rm -rf $path
 echo "0 0 * * * /usr/pb/setup.sh build >> /var/log/pb.log" | crontab -u root
-adduser --uid 1337 --disabled-password --gecos ,,, worker
+adduser --uid 1337 --disabled-password --gecos ,,, worker || true
 
 
 # Kick off a build if requested
