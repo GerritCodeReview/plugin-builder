@@ -45,6 +45,52 @@
       "revId": "c0cb4fbc94a7630f4055b7f3915040ec44aa2566",
       "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "fc71fd8c_749a4812",
+        "filename": "build.sh",
+        "patchSetId": 10
+      },
+      "lineNbr": 18,
+      "author": {
+        "id": 1011323
+      },
+      "writtenOn": "2014-03-26T04:41:43Z",
+      "side": 1,
+      "message": "We should pass this list to this script. Different branches have different plugins available.",
+      "range": {
+        "startLine": 18,
+        "startChar": 0,
+        "endLine": 18,
+        "endChar": 7
+      },
+      "revId": "c0cb4fbc94a7630f4055b7f3915040ec44aa2566",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "9c4e4155_710d18c1",
+        "filename": "build.sh",
+        "patchSetId": 10
+      },
+      "lineNbr": 32,
+      "author": {
+        "id": 1011323
+      },
+      "writtenOn": "2014-03-26T04:41:43Z",
+      "side": 1,
+      "message": "We should pass this value fro mthe outside, and ietrate over:\nstable-2.8, stable-2.9, master",
+      "range": {
+        "startLine": 32,
+        "startChar": 0,
+        "endLine": 32,
+        "endChar": 14
+      },
+      "revId": "c0cb4fbc94a7630f4055b7f3915040ec44aa2566",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": false
     }
   ]
 }
