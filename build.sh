@@ -48,6 +48,11 @@ git clone https://gerrit.googlesource.com/buck
 PATH=$workspace/buck/bin:$PATH
 
 
+gscp() {
+    gsutil cp -a public-read $1 gs://$bucket/$2
+}
+
+
 # Checkout and build gerrit
 git clone https://gerrit.googlesource.com/gerrit
 (
@@ -58,8 +63,7 @@ git clone https://gerrit.googlesource.com/gerrit
 if [ $code -ne 0 ]
 then
     echo "gerrit failed to build with exit code $code" 1>&2
-    gsutil cp gerrit_$release.log gs://$bucket/plugins/$release/gerrit_$release.log
-    gsutil acl set public-read gs://$bucket/plugins/$release/gerrit_$release.log
+    gscp gerrit/gerrit_$release.log $release/
     exit 1
 fi
 
@@ -72,8 +76,7 @@ fi
 if [ $code -ne 0 ]
 then
     echo "api failed to build with exit code $code" 1>&2
-    gsutil cp gerrit_api_$release.log gs://$bucket/plugins/$release/gerrit_api_$release.log
-    gsutil acl set public-read gs://$bucket/plugins/$release/gerrit_api_$release.log
+    gscp gerrit/gerrit_api_$release.log $release/
     exit 1
 fi
 
@@ -93,9 +96,8 @@ do
     if [ $code -ne 0 ]
     then
         echo "plugin $p failed to build with exit code $code" 1>&2
-        gsutil cp gerrit/$p_$release.log gs://$bucket/plugins/$release/$p/
+        gscp gerrit/$p_$release.log $release/$p/
     else
-        gsutil cp gerrit/buck-out/gen/plugins/$p/$p.jar gs://$bucket/plugins/$release/$p/$p.jar
-        gsutil acl set public-read gs://$bucket/plugins/$release/$p/$p.jar
+        gscp gerrit/buck-out/gen/plugins/$p/$p.jar plugins/$release/$p/
     fi
 done
