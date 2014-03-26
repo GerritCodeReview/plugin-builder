@@ -28,7 +28,7 @@ path=/usr/pb
 cp $0 $oldsetup
 rm -rf $path
 git clone https://gerrit-review.googlesource.com/plugin-builder $path
-if [ "$(sha1sum $path/setup.sh)" != "$(sha1sum $oldsetup)" ]
+if [ "$(sha1sum $path/setup.sh | grep -o '^[^ ]*')" != "$(sha1sum $oldsetup | grep -o '^[^ ]*')" ]
 then
     rm $oldsetup
     $path/setup.sh $1
