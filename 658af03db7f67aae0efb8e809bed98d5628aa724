@@ -1,0 +1,38 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "1c3a51a9_4d29599a",
+        "filename": "build.sh",
+        "patchSetId": 5
+      },
+      "lineNbr": 23,
+      "author": {
+        "id": 1006257
+      },
+      "writtenOn": "2014-03-26T00:46:06Z",
+      "side": 1,
+      "message": "eek, what directory?  Haha, this is a scary command.",
+      "revId": "658af03db7f67aae0efb8e809bed98d5628aa724",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "1c3a51a9_6d2615cb",
+        "filename": "build.sh",
+        "patchSetId": 5
+      },
+      "lineNbr": 82,
+      "author": {
+        "id": 1006257
+      },
+      "writtenOn": "2014-03-26T00:46:06Z",
+      "side": 1,
+      "message": "tws",
+      "revId": "658af03db7f67aae0efb8e809bed98d5628aa724",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": false
+    }
+  ]
+}
