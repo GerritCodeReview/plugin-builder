@@ -1,0 +1,50 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "fc71fd8c_948524b2",
+        "filename": "build.sh",
+        "patchSetId": 10
+      },
+      "lineNbr": 16,
+      "author": {
+        "id": 1011123
+      },
+      "writtenOn": "2014-03-26T04:40:58Z",
+      "side": 1,
+      "message": "Gerrit API",
+      "range": {
+        "startLine": 16,
+        "startChar": 36,
+        "endLine": 16,
+        "endChar": 42
+      },
+      "revId": "c0cb4fbc94a7630f4055b7f3915040ec44aa2566",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "9c4e4155_914c3c0e",
+        "filename": "build.sh",
+        "patchSetId": 10
+      },
+      "lineNbr": 16,
+      "author": {
+        "id": 1011123
+      },
+      "writtenOn": "2014-03-26T04:40:58Z",
+      "side": 1,
+      "message": "deploy",
+      "range": {
+        "startLine": 16,
+        "startChar": 28,
+        "endLine": 16,
+        "endChar": 35
+      },
+      "revId": "c0cb4fbc94a7630f4055b7f3915040ec44aa2566",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": false
+    }
+  ]
+}
