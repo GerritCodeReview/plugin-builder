@@ -22,13 +22,16 @@
 
 # Grab the latest files from git and install them
 # if the setup file has changed, rerun it
+sha1() {
+    sha1sum setup.sh | cut -d ' ' -f1
+}
 apt-get install -y git-core
 oldsetup=/tmp/pb-oldsetup.sh
 path=/usr/pb
 cp $0 $oldsetup
 rm -rf $path
 git clone https://gerrit-review.googlesource.com/plugin-builder $path
-if [ "$(sha1sum $path/setup.sh)" != "$(sha1sum $oldsetup)" ]
+if [ "$(sha1 $path/setup.sh)" != "$(sha1 $oldsetup)" ]
 then
     rm $oldsetup
     $path/setup.sh $1
