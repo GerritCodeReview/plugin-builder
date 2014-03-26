@@ -55,6 +55,7 @@ gscp() {
 
 # Checkout and build gerrit
 git clone --recursive https://gerrit.googlesource.com/gerrit
+code=0
 (
     cd gerrit
     git checkout $release
@@ -69,6 +70,7 @@ fi
 
 
 # Build the api
+code=0
 (
     cd gerrit
     buck build api_install &> gerrit_api_$release.log
@@ -89,6 +91,7 @@ do
     ln -s ../../$p gerrit/plugins/$p
 
     # build plugin
+    code=0
     (
       cd gerrit
       buck build plugins/$p:$p &> $p_$release.log
