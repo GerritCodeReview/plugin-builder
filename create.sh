@@ -20,6 +20,8 @@ zone=us-central2-b
 name=pluginbuilder
 
 gcutil --project $project deleteinstance \
+    --force \
+    --delete_boot_pd \
     --zone=$zone \
     $name
 
