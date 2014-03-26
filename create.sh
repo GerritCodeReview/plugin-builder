@@ -30,6 +30,6 @@ gcutil --project $project addinstance \
     --machine_type=n1-standard-8 \
     --image=projects/debian-cloud/global/images/debian-7-wheezy-v20140318 \
     --metadata_from_file=startup-script:$(dirname $0)/setup.sh \
-    --metadata=gstorage_bucket:gerrit-plugins \
+    --metadata=gstorage_bucket:gerritcodereview-plugins \
     --auto_delete_boot_disk \
     $name
