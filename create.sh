@@ -15,8 +15,15 @@
 #
 # Run this script to create the pluginbuilder instance
 
+if [ $# != 1 ]
+then
+    echo "Usage: $0 ZONE" 1>&2
+    echo "ZONE suggestion: us-central2-b" 1>&2
+    exit 1
+fi
+
 project=google.com:gerritcodereview-build
-zone=us-central2-b
+zone=$1
 name=pluginbuilder
 
 gcutil --project $project deleteinstance \
