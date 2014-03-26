@@ -54,7 +54,7 @@ gscp() {
 
 
 # Checkout and build gerrit
-git clone https://gerrit.googlesource.com/gerrit
+git clone --recursive https://gerrit.googlesource.com/gerrit
 (
     cd gerrit
     git checkout $release
