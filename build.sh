@@ -54,8 +54,7 @@ git clone https://gerrit.googlesource.com/gerrit
     cd gerrit
     git checkout $release
     buck build all &> gerrit_$release.log
-)
-code=$?
+) || code=$?
 if [ $code -ne 0 ]
 then
     echo "gerrit failed to build with exit code $code" 1>&2
@@ -69,8 +68,7 @@ fi
 (
     cd gerrit
     buck build api_install &> gerrit_api_$release.log
-)
-code=$?
+) || code=$?
 if [ $code -ne 0 ]
 then
     echo "api failed to build with exit code $code" 1>&2
@@ -91,8 +89,7 @@ do
     (
       cd gerrit
       buck build plugins/$p:$p &> $p_$release.log
-    )
-    code=$?
+    ) || code=$?
     if [ $code -ne 0 ]
     then
         echo "plugin $p failed to build with exit code $code" 1>&2
