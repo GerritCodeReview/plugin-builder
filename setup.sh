@@ -13,6 +13,38 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 #
-# Run this script to set up depencencies
+#
+# This script:
+# * bootstraps the build scripts
+# * installs needed packages and sets up the environment
+# * kicks off a build if requested
 
-apt-get install git-core openjdk-7-jdk ant maven
+
+# Grab the latest files from git and install them
+# if the setup file has changed, rerun it
+apt-get install -y git-core
+oldsetup=/tmp/pb-oldsetup.sh
+path=/usr/pb
+cp $0 $oldsetup
+rm -rf $path
+git clone https://gerrit-review.googlesource.com/plugin-builder $path
+if [ "$(sha1sum $path/setup.sh)" != "$(sha1sum $oldsetup)" ]
+then
+    rm $oldsetup
+    $path/setup.sh $1
+    exit 0
+fi
+
+
+# Install the needed packages and setup the environment
+apt-get install -y gcc openjdk-7-jdk ant maven zip
+rm -rf $path
+echo "0 0 * * * /usr/pb/setup.sh build >> /var/log/pb.log" | crontab -u root
+adduser --uid 1337 --disabled-password --gecos ,,, worker
+
+
+# Kick off a build if requested
+if [ "$1" == build ]
+then
+    su - worker -c $path/build.sh
+fi
