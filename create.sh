@@ -23,9 +23,11 @@ gcutil --project $project deleteinstance \
     --zone=$zone \
     $name
 
+# Specifying the service account explicitly is causing GCE to choke
+# Not sure what's wrong here.
+# --service_account=1082785722088@project.googleusercontent.com \
 gcutil --project $project addinstance \
     --zone=$zone \
-    --service_account=1082785722088@project.googleusercontent.com \
     --service_account_scopes=storage-rw \
     --machine_type=n1-standard-8 \
     --image=projects/debian-cloud/global/images/debian-7-wheezy-v20140318 \
