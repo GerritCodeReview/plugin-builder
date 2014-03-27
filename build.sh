@@ -104,3 +104,24 @@ do
         gscp gerrit/buck-out/gen/plugins/$p/$p.jar plugins/$release/$p/
     fi
 done
+
+
+# Update the html page
+html=/tmp/index.html
+echo "<html>
+<head>
+<title>Gerrit Plugins</title>
+</head>
+<body>
+<ul>" > $html
+
+for path in $(gsutil ls -r gs://gerritcodereview-plugins/ |
+        egrep -v "(^|:)$" |
+        egrep -o "gerritcodereview-plugins.*")
+do
+    echo "<li><a href=\"https://storage.cloud.google.com/$path\">$path</a></li>" >> $html
+done
+echo "</ul>
+</body>
+</html>" >> $html
+gscp $html index.html
