@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "fc71fd8c_b7e78202",
+        "filename": "build.sh",
+        "patchSetId": 1
+      },
+      "lineNbr": 120,
+      "author": {
+        "id": 1011123
+      },
+      "writtenOn": "2014-03-27T00:28:19Z",
+      "side": 1,
+      "message": "is the tab intentional?",
+      "revId": "6ae90c4b6d7eed4fb8eea884560ed9e78c79cb31",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": false
+    }
+  ]
+}
