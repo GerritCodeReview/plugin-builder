@@ -16,6 +16,24 @@
       "revId": "82ad25b27f02e56d1c41cbda77f8598df4b80e02",
       "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "9c4e4155_b4684ecd",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 1
+      },
+      "lineNbr": 8,
+      "author": {
+        "id": 1011323
+      },
+      "writtenOn": "2014-03-27T00:49:38Z",
+      "side": 1,
+      "message": "Yes. Should we split it in two?",
+      "parentUuid": "fc71fd8c_f7081af8",
+      "revId": "82ad25b27f02e56d1c41cbda77f8598df4b80e02",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": false
     }
   ]
 }
