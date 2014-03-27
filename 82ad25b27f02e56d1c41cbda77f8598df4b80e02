@@ -34,6 +34,24 @@
       "revId": "82ad25b27f02e56d1c41cbda77f8598df4b80e02",
       "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "9c4e4155_f462d6e8",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 1
+      },
+      "lineNbr": 8,
+      "author": {
+        "id": 1011123
+      },
+      "writtenOn": "2014-03-27T00:51:29Z",
+      "side": 1,
+      "message": "no, just mention it here in the commit message.",
+      "parentUuid": "9c4e4155_b4684ecd",
+      "revId": "82ad25b27f02e56d1c41cbda77f8598df4b80e02",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": false
     }
   ]
 }
