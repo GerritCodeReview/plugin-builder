@@ -101,6 +101,7 @@ do
         echo "plugin $p failed to build with exit code $code" 1>&2
         gscp gerrit/$p_$release.log $release/$p/
     else
-        gscp gerrit/buck-out/gen/plugins/$p/$p.jar plugins/$release/$p/
+        gscp gerrit/$p_$release.log $release/$p/
+        gscp gerrit/buck-out/gen/plugins/$p/$p.jar $release/plugins/$p/
     fi
 done
