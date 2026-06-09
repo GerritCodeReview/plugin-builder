@@ -49,7 +49,7 @@ PATH=$workspace/buck/bin:$PATH
 
 
 gscp() {
-    gsutil cp -a public-read $1 gs://$bucket/$2
+    gcloud storage cp --predefined-acl public-read $1 gs://$bucket/$2
 }
 
 
